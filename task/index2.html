@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Feedback Form</title>
+  <style>
+  body {
+       margin: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    .stars {
+      color: orange;
+      font-size: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    th, td {
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: white;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+    }
+    .submit-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Feedback Form</h2>
+  
+  <form>
+    <!-- Name and Email -->
+    <label>Name *</label><br>
+    <input type="text" name="firstname" placeholder="First" required>
+    <input type="text" name="lastname" placeholder="Last" required><br><br>
+
+    <label>Email *</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <!-- Rating -->
+    <label>Your Experience *</label><br>
+    <div class="stars">★★★★★</div>
+    <p>Overall, how would you rate your experience with us?</p>
+
+    <!-- Satisfaction Table -->
+    <h3>How satisfied are you with:</h3>
+    <table border="1">
+      <tr>
+        <th></th>
+        <th>Very Unsatisfied</th>
+        <th>Unsatisfied</th>
+        <th>Neutral</th>
+        <th>Satisfied</th>
+        <th>Very Satisfied</th>
+      </tr>
+      <tr>
+        <td>Purchase</td>
+        <td><input type="radio" name="purchase"></td>
+        <td><input type="radio" name="purchase"></td>
+        <td><input type="radio" name="purchase"></td>
+        <td><input type="radio" name="purchase"></td>
+        <td><input type="radio" name="purchase"></td>
+      </tr>
+      <tr>
+        <td>Service</td>
+        <td><input type="radio" name="service"></td>
+        <td><input type="radio" name="service"></td>
+        <td><input type="radio" name="service"></td>
+        <td><input type="radio" name="service"></td>
+        <td><input type="radio" name="service"></td>
+      </tr>
+      <tr>
+        <td>Company Overall</td>
+        <td><input type="radio" name="company"></td>
+        <td><input type="radio" name="company"></td>
+        <td><input type="radio" name="company"></td>
+        <td><input type="radio" name="company"></td>
+        <td><input type="radio" name="company"></td>
+      </tr>
+    </table>
+
+    <!-- Likelihood Table -->
+    <h3>How likely are you to:</h3>
+    <table border="1">
+      <tr>
+        <th></th>
+        <th>Very Unlikely</th>
+        <th>Unlikely</th>
+        <th>Neutral</th>
+        <th>Likely</th>
+        <th>Very Likely</th>
+      </tr>
+      <tr>
+        <td>Buy from us again</td>
+        <td><input type="radio" name="buy"></td>
+        <td><input type="radio" name="buy"></td>
+        <td><input type="radio" name="buy"></td>
+        <td><input type="radio" name="buy"></td>
+        <td><input type="radio" name="buy"></td>
+      </tr>
+      <tr>
+        <td>Recommend our product to others</td>
+        <td><input type="radio" name="recommend"></td>
+        <td><input type="radio" name="recommend"></td>
+        <td><input type="radio" name="recommend"></td>
+        <td><input type="radio" name="recommend"></td>
+        <td><input type="radio" name="recommend"></td>
+      </tr>
+      <tr>
+        <td>Recommend our company to others</td>
+        <td><input type="radio" name="recommend_company"></td>
+        <td><input type="radio" name="recommend_company"></td>
+        <td><input type="radio" name="recommend_company"></td>
+        <td><input type="radio" name="recommend_company"></td>
+        <td><input type="radio" name="recommend_company"></td>
+      </tr>
+    </table>
+
+    <!-- Comments -->
+    <h3>Additional comments or suggestions</h3>
+    <textarea></textarea><br>
+
+    <!-- Submit -->
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+</body>
+</html>
